@@ -158,10 +158,35 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+const gameChoices = ['Rock', 'Paper', 'Scissors']
+const computerChoiceIdx = Math.floor(Math.random() * 3)
+const computerChoice = gameChoices[computerChoiceIdx]
+
 function game(user, computer){
-    /*add your code here*/
+  if (user === 'Rock') {
+    if (computer === 'Paper') {
+      return 'you lose!'
+    } else if (computer === 'Scissors') {
+      return 'you win!'
+    }
+    return 'it\'s a tie'
+  } else if (user === 'Paper') {
+    if (computer === 'Scissors') {
+      return 'you lose!'
+    } else if (computer === 'Rock') {
+      return 'you win!'
+    }
+    return 'it\'s a tie'
+  } else {
+    if (computer === 'Rock') {
+      return 'you lose!'
+    } else if (computer === 'Paper') {
+      return 'yon win!'
+    }
+    return 'it\'s a tie'
+  }
 }
-  
+game('Rock', computerChoice)
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
