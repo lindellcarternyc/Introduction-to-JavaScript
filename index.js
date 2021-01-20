@@ -181,7 +181,7 @@ function game(user, computer){
     if (computer === 'rock') {
       return 'you lose!'
     } else if (computer === 'paper') {
-      return 'yon win!'
+      return 'you win!'
     }
     return 'it\'s a tie'
   }
@@ -200,8 +200,8 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(kilometers){
-  return kilometers * 1.60934
+function miles(km){
+  return km * 0.621371
 }
 
 
@@ -214,9 +214,9 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
-  }
+function feet(cm){
+  return cm / 30.48
+}
  
 
 
