@@ -250,9 +250,19 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(score){
+  if (score >= 90) {
+    return 'you got an A'
+  } else if (score >= 80) {
+    return 'you got a B'
+  } else if (score >= 70) {
+    return 'you got a C'
+  } else if (score >= 60) {
+    return 'you got a D'
+  } else {
+    return 'you got an F'
   }
+}
   
   
 
@@ -269,9 +279,17 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(str) {
+  const letters = str.split('')
+  let numVowels = 0
+  letters.forEach(letter => {
+    if (['aeiou'].includes(letter.toLowerCase())) {
+      numVowels++
+    }
+  })
+  return numVowels
 }
+vowelCounter('hello world')
 
 
 
