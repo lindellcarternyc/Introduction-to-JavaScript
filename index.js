@@ -17,8 +17,10 @@ Do the following:
 
    HINT: no function required
 */
-
-
+const votingAge = 18
+if (votingAge >= 18) {
+  console.log(true)
+}
 
 /*
 Task 1b - Values
@@ -30,9 +32,12 @@ Do the following:
 
    HINT: no function required
 */
-
-
-
+let value1 = true
+let value2 = 'hello'
+if (value2 === 'hello') {
+  value1 = false
+}
+console.log(value1)
 
 
 /*
@@ -45,9 +50,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-
-
+let numString = '1999'
+numString = Number(numString)
+console.log(numString)
 
 /*
 Task 1d - Multiply
@@ -74,10 +79,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(humanAge){
+  const dogAge = humanAge * 7
+  return dogAge
 }
-
+dogYears(32)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
