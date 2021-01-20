@@ -158,29 +158,29 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-const gameChoices = ['Rock', 'Paper', 'Scissors']
+const gameChoices = ['rock', 'paper', 'scissors']
 const computerChoiceIdx = Math.floor(Math.random() * 3)
 const computerChoice = gameChoices[computerChoiceIdx]
 
 function game(user, computer){
-  if (user === 'Rock') {
-    if (computer === 'Paper') {
+  if (user === 'rock') {
+    if (computer === 'paper') {
       return 'you lose!'
-    } else if (computer === 'Scissors') {
+    } else if (computer === 'scissors') {
       return 'you win!'
     }
     return 'it\'s a tie'
-  } else if (user === 'Paper') {
-    if (computer === 'Scissors') {
+  } else if (user === 'paper') {
+    if (computer === 'scissors') {
       return 'you lose!'
-    } else if (computer === 'Rock') {
+    } else if (computer === 'rock') {
       return 'you win!'
     }
     return 'it\'s a tie'
   } else {
-    if (computer === 'Rock') {
+    if (computer === 'rock') {
       return 'you lose!'
-    } else if (computer === 'Paper') {
+    } else if (computer === 'paper') {
       return 'yon win!'
     }
     return 'it\'s a tie'
@@ -200,9 +200,9 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
-  }
+function miles(kilometers){
+  return kilometers * 1.60934
+}
 
 
 
